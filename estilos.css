@@ -1,0 +1,239 @@
+body {
+  max-width: 100vw;
+  width: 100vw;
+  height: auto;
+  padding: 35px 200px;
+  margin: 0;
+  font-family: 'Georama', sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 7px silver;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "nivel1"
+    "mixt"
+    "nivel4"
+    "nivel5";
+  color: #999;
+}
+
+#datos {
+  grid-area: nivel1;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 200px 90px;
+  grid-template-areas:
+    "datos1 foto1"
+    "datos2 foto1";
+}
+
+#datos-personales {
+  grid-area: datos1;
+  padding: 0px 20px 20px 20px;
+}
+
+#datos-personales h1 {
+  margin: 10px 0;
+}
+
+#datos-personales h5 a {
+  text-decoration: none;
+}
+
+#datos-personales h6 a {
+  text-decoration: none;
+}
+
+#datos-interes {
+  grid-area: datos2;
+  padding: 20px 20px;
+  font-style: oblique;
+}
+
+#datos-interes h6 {
+  font-size: 12px;
+}
+
+#datos-interes a {
+  text-decoration: none;
+}
+
+#datos-foto {
+  grid-area: foto1;
+  padding: 40px;
+}
+
+#datos-foto img {
+  display: block;
+  border-radius: 47%;
+  margin: auto;
+}
+
+#mix {
+  grid-area: mixt;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "mix-exp mix-for";
+  border-top: 1.5px solid #e7e1e1;
+}
+
+#exp-lab {
+  grid-area: mix-exp;
+  /*background: lightgreen;*/
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#exp-lab h3 {
+  display: block;
+  background: #999;
+  width: 65%;
+  padding: 0px 7px;
+  color: #387de4;
+  box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.exp {
+  display: grid;
+  grid-template-rows: auto repeat(3, auto);
+  grid-template-areas:
+    "h6"
+    "yudigar"
+    "tecnoven"
+    "simon";
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0;
+  color: #999;
+}
+
+.exp h4 {
+  text-decoration: underline;
+}
+
+.det-exp {
+  box-shadow: 2px 2px 5px #387de4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.det-exp h6 {
+  text-shadow: 0px 2px 3px #387de4;
+}
+
+.det-exp span {
+  font-style: italic;
+}
+
+.det-exp-2 {
+  box-shadow: 2px 2px 5px #387de4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.det-exp-2 h6 {
+  text-shadow: 0px 2px 3px #387de4;
+}
+
+.det-exp-2 span {
+  font-style: italic;
+}
+
+.det-exp-3 {
+  box-shadow: 2px 2px 5px #387de4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.det-exp-3 h6 {
+  text-shadow: 0px 2px 3px #387de4;
+}
+
+.det-exp-3 span {
+  font-style: italic;
+}
+
+#formacion {
+  grid-area: mix-for;
+  /*  background: lightgreen;*/
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#formacion h3 {
+  display: block;
+  background: #999;
+  width: 65%;
+  padding: 0px 7px;
+  color: #387de4;
+  box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.forma {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "ugma"
+    "salle";
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0;
+  color: #999;
+}
+
+.det-forma {
+  box-shadow: 2px 2px 5px #387de4;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.forma h4 {
+  text-decoration: underline;
+}
+
+.det-forma h6 {
+  text-shadow: 0px 2px 3px #387de4;
+}
+
+.det-forma span {
+  font-style: italic;
+}
+
+
+
+#aptitudes {
+  grid-area: nivel4;
+  width: 100%;
+  height: 100%;
+  border-top: 1.5px solid #e7e1e1;
+padding:20px;
+}
+
+#aptitudes h3 {
+  display: block;
+  background: #999;
+  width: 37%;
+  padding: 0px 7px;
+  color: #387de4;
+  box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom:20px;
+}
