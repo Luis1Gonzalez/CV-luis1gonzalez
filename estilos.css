@@ -28,15 +28,17 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 200px 90px;
+  grid-template-rows: auto;
   grid-template-areas:
     "datos1 foto1"
     "datos2 foto1";
+  background: aqua;
 }
 
 #datos-personales {
   grid-area: datos1;
   padding: 0px 20px 20px 20px;
+  background: yellow;
 }
 
 #datos-personales h1 {
@@ -55,6 +57,7 @@ body {
   grid-area: datos2;
   padding: 20px 20px;
   font-style: oblique;
+  background: silver;
 }
 
 #datos-interes h6 {
@@ -68,6 +71,7 @@ body {
 #datos-foto {
   grid-area: foto1;
   padding: 40px;
+  background: orangered;
 }
 
 #datos-foto img {
@@ -84,6 +88,7 @@ body {
   grid-template-areas:
     "mix-exp mix-for";
   border-top: 1.5px solid #e7e1e1;
+  background: pink;
 }
 
 #exp-lab {
@@ -98,7 +103,7 @@ body {
 #exp-lab h3 {
   display: block;
   background: #999;
-  width: 65%;
+  width: 75%;
   padding: 0px 7px;
   color: #387de4;
   box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
@@ -118,6 +123,7 @@ body {
   padding: 10px;
   margin: 0;
   color: #999;
+  text-align: justify;
 }
 
 .exp h4 {
@@ -216,24 +222,212 @@ body {
   font-style: italic;
 }
 
-
-
 #aptitudes {
   grid-area: nivel4;
   width: 100%;
   height: 100%;
   border-top: 1.5px solid #e7e1e1;
-padding:20px;
+  padding: 20px;
 }
 
 #aptitudes h3 {
   display: block;
   background: #999;
-  width: 37%;
+  width: 47%;
   padding: 0px 7px;
   color: #387de4;
   box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
   border-radius: 2px;
   text-align: center;
-  margin-bottom:20px;
+  margin-bottom: 20px;
+}
+
+@media(max-width:1140px) {
+  #datos-personales h1 {
+    font-size: 25px;
+  }
+
+  #datos-personales h3 {
+    font-size: 20px;
+  }
+
+  #datos-personales {
+    padding: 0px 10px;
+  }
+
+  #exp-lab h3 {
+    font-size: 20px;
+  }
+
+  .exp h4 {
+    font-size: 18px;
+  }
+
+  #formacion h3 {
+    font-size: 20px;
+  }
+
+  #aptitudes h3 {
+    font-size: 20px;
+  }
+
+  .forma h4 {
+    font-size: 18px;
+  }
+}
+
+@media(max-width:1000px) {
+  #exp-lab h3 {
+    font-size: 20px;
+  }
+
+  #datos-personales h1 {
+    font-size: 20px;
+  }
+
+  #datos-personales h3 {
+    font-size: 15px;
+  }
+
+  #datos-foto {
+    padding: 24px;
+  }
+
+  #exp-lab h3 {
+    font-size: 15px;
+  }
+
+  .exp h4 {
+    font-size: 13px;
+  }
+
+  #formacion h3 {
+    font-size: 15px;
+  }
+
+  #aptitudes h3 {
+    font-size: 15px;
+  }
+
+  .forma h4 {
+    font-size: 13px;
+  }
+
+  .exp h6 {
+    font-size: 12px;
+  }
+
+  .exp p {
+    font-size: 12px;
+  }
+
+  .exp span {
+    font-size: 12px;
+  }
+
+  .forma h6 {
+    font-size: 12px;
+  }
+
+  .forma p {
+    font-size: 12px;
+  }
+
+  .forma span {
+    font-size: 12px;
+  }
+
+  #aptitudes h3 {
+    font-size: 15px;
+  }
+
+  #aptitudes ul {
+    font-size: 12px;
+  }
+}
+
+@media(max-width:860px) {
+  #datos {
+    display: grid;
+    grid-template-areas:
+      "datos1 datos1"
+      "datos2 foto1";
+  }
+
+  #datos-personales h5 a {
+    font-size: 12px;
+  }
+
+  #datos-personales h6 {
+    font-size: 12px;
+  }
+
+  #datos-personales h1 {
+    font-size: 20px;
+  }
+
+  #datos-personales h3 {
+    font-size: 15px;
+  }
+
+  #datos-foto {
+    padding: 10px;
+  }
+
+  #mix {
+    display: grid;
+    grid-template-areas:
+      "mix-exp mix-exp"
+      "mix-for mix-for";
+  }
+
+  #exp-lab {
+    padding: 10px;
+  }
+
+  #exp-lab h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #formacion h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #aptitudes h3 {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width:691px){
+
+  #datos{
+    display:grid;
+    grid-template-areas:
+    "datos1 datos1"
+    "datos2 datos2"
+    "foto1 foto1";
+  }
+
+#datos-personales h1{
+  font-size:15px;
+}
+
+#datos-personales h3{
+  font-size:12px;
+}
+
+#datos-personales h5{
+  font-size:12px;
+}
+
+#datos-personales h6{
+  font-size:12px;
+}
+
+
+
+
 }
