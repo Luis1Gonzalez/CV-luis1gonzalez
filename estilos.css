@@ -14,7 +14,7 @@ body {
   border-radius: 3px;
   box-shadow: 0px 0px 7px silver;
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
   grid-template-areas:
     "nivel1"
     "mixt"
@@ -27,7 +27,7 @@ body {
   width: 100%;
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: auto;
+  grid-template-rows: 60% 40%;
   grid-template-areas:
     "datos1 foto1"
     "datos2 foto1";
@@ -44,7 +44,7 @@ body {
   margin: 10px 0;
 }
 
-#datos-personales h5 a {
+#datos-personales h5{
   text-decoration: none;
 }
 
@@ -244,11 +244,15 @@ body {
 
 @media(max-width:1140px) {
   #datos-personales h1 {
-    font-size: 25px;
+    font-size: 30px;
+  }
+
+  #datos-personales h5{
+    font-size:17px;
   }
 
   #datos-personales h3 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   #datos-personales {
@@ -289,12 +293,16 @@ body {
     font-size: 15px;
   }
 
+  #datos-personales h5{
+    font-size: 13px;
+  }
+
   #datos-foto {
     padding: 24px;
   }
 
   #exp-lab h3 {
-    font-size: 15px;
+    font-size: 11px;
   }
 
   .exp h4 {
@@ -358,8 +366,16 @@ body {
       "datos2 foto1";
   }
 
-  #datos-personales h5 a {
-    font-size: 12px;
+  #datos-personales h1{
+    font-size: 20px;
+  }
+
+  #datos-personales h3{
+    font-size: 17px;
+  }
+
+  #datos-personales h5{
+    font-size: 15px;
   }
 
   #datos-personales h6 {
