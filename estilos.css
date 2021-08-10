@@ -31,20 +31,18 @@ body {
   grid-template-areas:
     "datos1 foto1"
     "datos2 foto1";
-
 }
 
 #datos-personales {
   grid-area: datos1;
   padding: 0px 20px 20px 20px;
-
 }
 
 #datos-personales h1 {
   margin: 10px 0;
 }
 
-#datos-personales h5{
+#datos-personales h5 {
   text-decoration: none;
 }
 
@@ -56,7 +54,6 @@ body {
   grid-area: datos2;
   padding: 20px 20px;
   font-style: oblique;
-
 }
 
 #datos-interes h6 {
@@ -70,14 +67,14 @@ body {
 #datos-foto {
   grid-area: foto1;
   padding: 40px;
-
 }
 
 #datos-foto img {
   display: block;
   border-radius: 47%;
   margin: auto;
-  box-shadow:0px 0px 3px #0254f1;
+  box-shadow: 0px 0px 3px #0254f1;
+  margin-bottom: 45px;
 }
 
 #mix {
@@ -88,7 +85,6 @@ body {
   grid-template-areas:
     "mix-exp mix-for";
   border-top: 1.5px solid #e7e1e1;
-
 }
 
 #exp-lab {
@@ -242,13 +238,18 @@ body {
   margin-bottom: 20px;
 }
 
+#aptitudes .botones a {
+  color: #fff;
+  text-decoration: none;
+}
+
 @media(max-width:1140px) {
   #datos-personales h1 {
     font-size: 30px;
   }
 
-  #datos-personales h5{
-    font-size:17px;
+  #datos-personales h5 {
+    font-size: 17px;
   }
 
   #datos-personales h3 {
@@ -293,7 +294,7 @@ body {
     font-size: 15px;
   }
 
-  #datos-personales h5{
+  #datos-personales h5 {
     font-size: 13px;
   }
 
@@ -366,15 +367,15 @@ body {
       "datos2 foto1";
   }
 
-  #datos-personales h1{
+  #datos-personales h1 {
     font-size: 20px;
   }
 
-  #datos-personales h3{
+  #datos-personales h3 {
     font-size: 17px;
   }
 
-  #datos-personales h5{
+  #datos-personales h5 {
     font-size: 15px;
   }
 
@@ -448,5 +449,4 @@ body {
   #datos-personales h6 {
     font-size: 12px;
   }
-
 }
