@@ -100,6 +100,7 @@ body {
   width: 75%;
   padding: 0px 7px;
   color: #387de4;
+  text-shadow:0px 0px 3px #fff;
   box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
   border-radius: 2px;
   text-align: center;
@@ -180,6 +181,7 @@ body {
   width: 65%;
   padding: 0px 7px;
   color: #387de4;
+  text-shadow:0px 0px 3px #fff;
   box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
   border-radius: 2px;
   text-align: center;
@@ -229,6 +231,7 @@ body {
   width: 47%;
   padding: 0px 7px;
   color: #387de4;
+  text-shadow:0px 0px 3px #fff;
   box-shadow: 0px 0px 3px #fff, 0px 0px 7px #387de4;
   border-radius: 2px;
   text-align: center;
@@ -401,6 +404,37 @@ body {
     font-size: 15px;
     width: 100%;
   }
+
+.botonoes{
+  justify-content:flex-end;
+  width:100%;
+
+  display:grid;
+  grid-template-columns:60% repeat(2, 20%);
+  grid-template-areas:
+  ". arri guar";
+}
+  .boton-arri{
+    grid-area:arri;
+
+    width:100%;
+  }
+
+  .boton-guar{
+    grid-area:guar;
+    width:100%;
+  }
+
+  .botonoes a{
+    color:white;
+    text-decoration:none;
+        display:block;
+  }
+
+  .botonoes a:hover{
+    color:#f0b823;
+    font-size:13px;
+  }
 }
 
 @media (max-width:691px) {
@@ -444,5 +478,13 @@ body {
 
   #datos-foto img {
     height: 130px;
+  }
+
+  .botonoes a{
+    font-size:10px;
+    margin:0;
+  }
+  .botonoes .boton-guar{
+    padding:0;
   }
 }
